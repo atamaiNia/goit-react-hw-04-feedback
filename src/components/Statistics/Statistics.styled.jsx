@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const StatisticsList = styled.ul`
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 65px;
+  padding-right: 65px;
 `;
 
 export const StatisticsItem = styled.li`
