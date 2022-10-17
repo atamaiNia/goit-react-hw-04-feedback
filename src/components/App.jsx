@@ -22,9 +22,9 @@ class App extends Component {
     return good + neutral + bad;
   };
 
-  positivePercentageFeedback = ({ good, neutral, bad }) => {
+  positivePercentageFeedback = ({ good }) => {
     const percentageFeedback = Number(
-      ((good / (good + neutral + bad)) * 100).toFixed(0)
+      ((good / this.totalFeedback(this.state)) * 100).toFixed(0)
     );
     return percentageFeedback > 0 ? percentageFeedback : 0;
   };
