@@ -14,12 +14,17 @@ export default function App() {
       case 'good':
         setGood(prevState => prevState + 1);
         break;
+
       case 'neutral':
         setNeutral(prevState => prevState + 1);
         break;
+
       case 'bad':
         setBad(prevState => prevState + 1);
         break;
+
+      default:
+        return;
     }
   };
 
